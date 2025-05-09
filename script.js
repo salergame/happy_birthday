@@ -415,8 +415,6 @@ function initMusicPlayer() {
             audio.play()
                 .catch(error => {
                     console.error('Ошибка воспроизведения:', error);
-                    // Показываем уведомление пользователю о том, что аудио будет доступно после загрузки песни
-                    alert('Пожалуйста, сначала загрузите аудиофайл birthday-song.mp3');
                 });
             playIcon.className = 'fas fa-pause';
             
