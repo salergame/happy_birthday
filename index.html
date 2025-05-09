@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>С Днем Рождения, Айша!</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/three@0.132.2/build/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.132.2/examples/js/controls/OrbitControls.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="content">
+        <header>
+            <h1 class="title">С Днем Рождения, Айша!</h1>
+            <h2 class="subtitle">19 лет - прекрасный возраст</h2>
+            <p>*p.s. обязательно прокрути до самого низа этого сайта*</p>
+        </header>
+
+        <div class="scene-container">
+            <canvas id="birthday-scene"></canvas>
+        </div>
+
+        <div class="gallery">
+            <h2>Твои прекрасные моменты</h2>
+            <div class="photos">
+                <!-- Замените путь_к_фото1.jpg, путь_к_фото2.jpg и т.д. на реальные пути к вашим фотографиям -->
+                <div class="photo-container">
+                    <img src="photo1.jpg" alt="Айша" class="photo">
+                </div>
+                <div class="photo-container">
+                    <img src="photo2.jpg" alt="Айша" class="photo">
+                </div>
+                <div class="photo-container">
+                    <img src="photo3.jpg" alt="Айша" class="photo">
+                </div>
+                <div class="photo-container">
+                    <img src="photo4.jpg" alt="Айша" class="photo">
+                </div>
+                <!-- Вы можете добавить больше фотографий, скопировав блок выше и изменив путь к файлу -->
+            </div>
+        </div>
+
+        <div class="wishes">
+            <h2>Пожелания</h2>
+            <p>Дорогая Айша, в твой 19-й день рождения хочу пожелать тебе безграничного счастья, любви и успехов во всех начинаниях! Пусть каждый день будет наполнен яркими красками, незабываемыми впечатлениями и прекрасными моментами.</p>
+            <p>Пусть твоя красота и доброта всегда будут твоими верными спутниками, а улыбка никогда не покидает твоего лица!</p>
+        </div>
+
+        <div class="countdown">
+            <h2>До твоего дня рождения осталось:</h2>
+            <div id="timer">
+                <div>
+                    <span id="days">00</span>
+                    <span class="label">Дней</span>
+                </div>
+                <div>
+                    <span id="hours">00</span>
+                    <span class="label">Часов</span>
+                </div>
+                <div>
+                    <span id="minutes">00</span>
+                    <span class="label">Минут</span>
+                </div>
+                <div>
+                    <span id="seconds">00</span>
+                    <span class="label">Секунд</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="music-player">
+            <h2>Специально для тебя</h2>
+            <div class="player-container">
+                <div class="player-controls">
+                    <button id="play-button" class="play-button">
+                        <i class="fas fa-play"></i>
+                    </button>
+                    <div class="player-info">
+                        <div class="song-title">С Днем Рождения, Айша!</div>
+                        <div class="progress-container">
+                            <div class="progress-bar"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <audio id="birthday-song" preload="auto">
+                <source src="birthday-song.mp3" type="audio/mpeg">
+                Ваш браузер не поддерживает аудио элемент.
+            </audio>
+        </div>
+    </div>
+
+    <div class="confetti-container" id="confetti-container"></div>
+
+    <script src="script.js"></script>
+</body>
+</html> 
